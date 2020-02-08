@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <title>Universidad Isabel I - Biblioteca</title>
     <link rel="icon" type="image/png" href="https://www.inclo.net/images/favicons/favicon-cyan.ico">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<nav>
+    <p><a class="link-active">Listado libros</a></p>
+    <p><a href="listadoPrestamos.html">Listado préstamos</a></p>
+    <p><a href="categorias.html">Categorias</a></p>
+</nav>
+<h1 class="lib-tittle-primary">Listado libros</h1>
 <table>
     <tbody>
-    <tr>
-        <td><a>Listado libros</a></td>
-        <td><a href="listadoPrestamos.html">Listado préstamos</a></td>
-        <td><a href="categorias.html">Categorias</a></td>
-    </tr>
-    </tbody>
-</table>
-<h1>Listado libros</h1>
-<table>
-    <tbody>
-    <tr>
+    <tr class="book-card">
         <td>
             <img src="https://images-eu.ssl-images-amazon.com/images/I/31ZkbloXXeL.jpg"
                  alt="Alegría" width="100" height="156">
@@ -29,15 +26,15 @@
                 <tbody>
                 <tr>
                     <td>
-                        <label><b>Autores:</b></label>
+                        <label class="book-card-data-tittle"><b>Autores:</b></label>
                     </td>
                     <td>
-                        <label>Manuel Vilas</label>
+                        <label class="lib-tittle-secondary-blue author">Manuel Vilas</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Editorial:</b></label>
+                        <label class="book-card-data-tittle"><b>Editorial:</b></label>
                     </td>
                     <td>
                         <label>Edibook</label>
@@ -45,7 +42,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>ISBN:</b></label>
+                        <label class="book-card-data-tittle"><b>ISBN:</b></label>
                     </td>
                     <td>
                         <label>9781234567897</label>
@@ -53,7 +50,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Disponibles:</b></label>
+                        <label class="book-card-data-tittle"><b>Disponibles:</b></label>
                     </td>
                     <td>
                         <label>3</label>
@@ -63,7 +60,7 @@
             </table>
         </td>
     </tr>
-    <tr>
+    <tr class="book-card">
         <td>
             <img src="http://zetaestaticos.com/mediterraneo/img/noticias/1/252/1252681_1.jpg"
                  alt="Terra Alta" width="100" height="156">
@@ -74,15 +71,15 @@
                 <tbody>
                 <tr>
                     <td>
-                        <label><b>Autores:</b></label>
+                        <label class="book-card-data-tittle"><b>Autores:</b></label>
                     </td>
                     <td>
-                        <label>Javier Cercas</label>
+                        <label class="lib-tittle-secondary-blue author">Javier Cercas</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Editorial:</b></label>
+                        <label class="book-card-data-tittle"><b>Editorial:</b></label>
                     </td>
                     <td>
                         <label>Mediterraneo</label>
@@ -90,7 +87,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>ISBN:</b></label>
+                        <label class="book-card-data-tittle"><b>ISBN:</b></label>
                     </td>
                     <td>
                         <label>66781234535897</label>
@@ -98,7 +95,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Disponibles:</b></label>
+                        <label class="book-card-data-tittle"><b>Disponibles:</b></label>
                     </td>
                     <td>
                         <label>5</label>
@@ -108,7 +105,7 @@
             </table>
         </td>
     </tr>
-    <tr>
+    <tr class="book-card">
         <td>
             <img src="https://ep01.epimg.net/elpais/imagenes/2018/10/16/escaparate/1539705096_039602_1539705537_sumario_normal.jpg"
                  alt="Los asesinos del emperador" width="100" height="156">
@@ -119,15 +116,15 @@
                 <tbody>
                 <tr>
                     <td>
-                        <label><b>Autores:</b></label>
+                        <label class="book-card-data-tittle"><b>Autores:</b></label>
                     </td>
                     <td>
-                        <label>Santiago Posteguillo</label>
+                        <label class="lib-tittle-secondary-blue author">Santiago Posteguillo</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Editorial:</b></label>
+                        <label class="book-card-data-tittle"><b>Editorial:</b></label>
                     </td>
                     <td>
                         <label>Planeta</label>
@@ -135,7 +132,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>ISBN:</b></label>
+                        <label class="book-card-data-tittle"><b>ISBN:</b></label>
                     </td>
                     <td>
                         <label>5751235567897</label>
@@ -143,7 +140,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Disponibles:</b></label>
+                        <label class="book-card-data-tittle"><b>Disponibles:</b></label>
                     </td>
                     <td>
                         <label>5</label>
@@ -153,7 +150,7 @@
             </table>
         </td>
     </tr>
-    <tr>
+    <tr class="book-card">
         <td>
             <img src="https://fotos01.laopiniondemalaga.es/2019/11/08/328x206/lacaranorte.jpg"
                  alt="La cara norte del corazon" width="100" height="156">
@@ -164,15 +161,15 @@
                 <tbody>
                 <tr>
                     <td>
-                        <label><b>Autores:</b></label>
+                        <label class="book-card-data-tittle"><b>Autores:</b></label>
                     </td>
                     <td>
-                        <label>Dolores Redondo</label>
+                        <label class="lib-tittle-secondary-blue author">Dolores Redondo</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Editorial:</b></label>
+                        <label class="book-card-data-tittle"><b>Editorial:</b></label>
                     </td>
                     <td>
                         <label>Libroteca</label>
@@ -180,7 +177,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>ISBN:</b></label>
+                        <label class="book-card-data-tittle"><b>ISBN:</b></label>
                     </td>
                     <td>
                         <label>2781242567897</label>
@@ -188,7 +185,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Disponibles:</b></label>
+                        <label class="book-card-data-tittle"><b>Disponibles:</b></label>
                     </td>
                     <td>
                         <label>6</label>
@@ -198,7 +195,7 @@
             </table>
         </td>
     </tr>
-    <tr>
+    <tr class="book-card">
         <td>
             <img src="https://i.pinimg.com/originals/10/50/6b/10506b47c01a73a13a9aef4a50d2a86b.jpg"
                  alt="El fuego invisible" width="100" height="156">
@@ -209,15 +206,15 @@
                 <tbody>
                 <tr>
                     <td>
-                        <label><b>Autores:</b></label>
+                        <label class="book-card-data-tittle"><b>Autores:</b></label>
                     </td>
                     <td>
-                        <label>Javier Sierra</label>
+                        <label class="lib-tittle-secondary-blue author">Javier Sierra</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Editorial:</b></label>
+                        <label class="book-card-data-tittle"><b>Editorial:</b></label>
                     </td>
                     <td>
                         <label>Bookilibro</label>
@@ -225,7 +222,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>ISBN:</b></label>
+                        <label class="book-card-data-tittle"><b>ISBN:</b></label>
                     </td>
                     <td>
                         <label>6678123457897</label>
@@ -233,7 +230,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label><b>Disponibles:</b></label>
+                        <label class="book-card-data-tittle"><b>Disponibles:</b></label>
                     </td>
                     <td>
                         <label>8</label>
