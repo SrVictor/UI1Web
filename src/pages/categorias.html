@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <title>Universidad Isabel I - Biblioteca</title>
     <link rel="icon" type="image/png" href="https://www.inclo.net/images/favicons/favicon-cyan.ico">
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript">
+        var size = 16;
+
+        function fontUp() {
+            size++;
+            document.body.style.fontSize = size + "px";
+        }
+
+        function fontDown() {
+            size--;
+            document.body.style.fontSize = size + "px";
+        }
+
+        function primaryColour() {
+            document.body.style.backgroundColor = "#E4004F";
+        }
+
+        function primaryColourGrey() {
+            document.body.style.backgroundColor = "#38414A";
+        }
+    </script>
 </head>
 <body>
-<table>
-    <tbody>
-    <tr>
-        <td><a href="index.html">Listado libros</a></td>
-        <td><a href="listadoPrestamos.html">Listado préstamos</a></td>
-        <td><a>Categorias</a></td>
-    </tr>
-    </tbody>
-</table>
-<h1>Categorías</h1>
+<nav>
+    <p><a href="index.html">Listado libros</a></p>
+    <p><a href="listadoPrestamos.html">Listado préstamos</a></p>
+    <p><a class="link-active">Categorias</a></p>
+    <div style="display: flex">
+        <div class="text-size-modifier" onclick="fontUp()">A<sup>+</sup></div>
+        <div class="text-size-modifier" onclick="fontDown()">A<sup>-</sup></div>
+    </div>
+    <div style="display: flex">
+        <div class="text-size-modifier" style="width: 19px; height: 19px; background-color: #E4004F" onclick="primaryColour()"></div>
+        <div class="text-size-modifier" style="width: 19px; height: 19px; background-color: #38414A" onclick="primaryColourGrey()"></div>
+    </div>
+</nav>
+<h1 class="lib-tittle-primary">Categorías</h1>
 <ul>
     <li><h3><a href="index.html">Aventura</a></h3></li>
     <li><h3><a href="index.html">Acción</a></h3></li>
