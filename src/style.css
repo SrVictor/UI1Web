@@ -1,22 +1,23 @@
 body {
     font-size: 16px;
+    color: white;
 }
 
 @media only screen and (max-width: 400px) {
     body {
-        background-color: lightgrey;
+        background-color: dimgrey;
     }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     body {
-        background-color: lightblue;
+        background-color: darkgrey;
     }
 }
 
 @media only screen and (min-width: 961px) {
     Body {
-        background-color: white;
+        background-color: grey;
     }
 }
 
@@ -28,7 +29,7 @@ body {
 }
 
 .lib-tittle-primary {
-    color: #E4004F;
+    color: white;
 }
 
 .lib-tittle-primary-grey {
@@ -70,6 +71,9 @@ body {
 }
 
 nav {
+    color: black;
     width: 200px;
     float: right;
+    background-color: white;
+    border: 1px solid white;
 }
