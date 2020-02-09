@@ -5,12 +5,29 @@
     <title>Universidad Isabel I - Biblioteca</title>
     <link rel="icon" type="image/png" href="https://www.inclo.net/images/favicons/favicon-cyan.ico">
     <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript">
+        var size = 16;
+
+        function fontUp() {
+            size++;
+            document.body.style.fontSize = size + "px";
+        }
+
+        function fontDown() {
+            size--;
+            document.body.style.fontSize = size + "px";
+        }
+    </script>
 </head>
 <body>
 <nav>
     <p><a class="link-active">Listado libros</a></p>
     <p><a href="listadoPrestamos.html">Listado préstamos</a></p>
     <p><a href="categorias.html">Categorias</a></p>
+    <div style="display: flex">
+        <div class="text-size-modifier" onclick="fontUp()">A<sup>+</sup></div>
+        <div class="text-size-modifier" onclick="fontDown()">A<sup>-</sup></div>
+    </div>
 </nav>
 <h1 class="lib-tittle-primary">Listado libros</h1>
 <table>

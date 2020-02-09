@@ -1,3 +1,7 @@
+body {
+    font-size: 16px;
+}
+
 @media only screen and (max-width: 400px) {
     body {
         background-color: lightgrey;
@@ -16,8 +20,19 @@
     }
 }
 
+.text-size-modifier {
+    margin-left: .5em;
+    padding: .25em;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
 .lib-tittle-primary {
     color: #E4004F;
+}
+
+.lib-tittle-primary-grey {
+    color: #38414A;
 }
 
 .lib-tittle-secondary-green {
